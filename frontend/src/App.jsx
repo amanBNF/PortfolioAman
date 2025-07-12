@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
+import Focus from "./components/Focus";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
           }`}
         >
           <Navbar />
+          <Focus />
         </div>
       )}
     </div>

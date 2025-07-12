@@ -3,4 +3,8 @@
 body{
   background-color: #111111; /* Dark near-black background */
   color: #e5e5e5;
-}
+  font-family: 'Fira Code', monospace; /* Global font */
+  };
+
+
+
