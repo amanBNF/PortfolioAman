@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from "react";
 
 const codeLines = [
-  "import { QuantumBoot } from '@shivam/os';",
-  "import { SpaceTime } from '@universe/core';",
+  "import { BootProtocol } from '@portfolio/core';",
+  "import { Timeline } from '@life/journey';",
   "",
   "export default function SystemLoader() {",
-  "  const quantumModules = [",
-  '    "NeuralCore", "QuantumDB", "AI Engine",',
-  '    "CryptoVault", "BioAuth", "SpaceTime",',
-  '    "HyperCache", "ZeroLatency"',
+  "  const devModules = [",
+  '    "FrontendForge", "BackendBridge", "APIGateway",',
+  '    "SecureVault", "AuthMatrix", "DevOpsPilot",',
+  '    "CloudSync", "AI_Companion"',
   "  ];",
   "",
   "  const systemConfig = {",
-  "    speed: 'warp 9.9',",
-  "    encryption: 'quantum-locked',",
-  "    telemetry: 'full',",
-  "    retry: true",
+  "    mode: 'hyper-productive',",
+  "    encryption: 'JWT + OAuth2',",
+  "    logging: 'verbose',",
+  "    retries: Infinity,",
+  "    theme: 'dark-mode'",
   "  };",
-  "}"
+  "",
+  "  BootProtocol.initialize(devModules, systemConfig);",
+  '  Timeline.sync("🚀 Launching Developer Portfolio...");',
+  "}",
 ];
+
 
 const Loader = ({ onComplete }) => {
   const [visibleLines, setVisibleLines] = useState([]);

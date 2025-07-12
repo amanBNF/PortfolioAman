@@ -7,8 +7,8 @@ const Navbar = () => {
                 <div className="flex space-x-10 text-lg font-medium">
                     {['Home', 'About', 'Projects', 'Contact'].map((item) => (
                         <div key={item} className="relative group cursor-pointer">
-                            <span className="text-gray-300 group-hover:text-white transition">{item}</span>
-                            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+                            <span className="text-gray-300 group-hover:text-white transition hover:text-cyan-400">{item}</span>
+                            <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
                         </div>
                     ))}
                 </div>
