@@ -75,7 +75,7 @@ const Loader = ({ onComplete }) => {
             </div>
             <div className="p-4 whitespace-pre-wrap text-xs min-h-[180px]">
               {visibleLines.map((line, idx) => (
-                <div key={idx}>{line}</div>
+                <div className="text-green-400" key={idx}>{line}</div>
               ))}
             </div>
             <div className="text-pink-400 px-4 pt-1 text-xs">
