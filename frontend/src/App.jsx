@@ -1,0 +1,31 @@
+import React, { useState } from "react";
+import Loader from "./components/Loader";
+import Navbar from "./components/Navbar";
+
+const App = () => {
+  const [loading, setLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  const handleComplete = () => {
+    setLoading(false);
+    setTimeout(() => setShowContent(true), 100);
+  };
+
+  return (
+    <div>
+      {loading ? (
+        <Loader onComplete={handleComplete} />
+      ) : (
+        <div
+          className={`transition-all duration-1000 ease-in-out ${
+            showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <Navbar />
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default App;
