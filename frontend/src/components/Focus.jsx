@@ -40,7 +40,7 @@ const Focus = () => {
               📧 aman29shukla@gmail.com
             </a>
             <a
-              href="https://www.linkedin.com/in/aman-shukla"
+              href="https://www.linkedin.com/in/aman-shukla-a779a5332"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#1a1f2e] px-4 py-2 rounded border border-black text-white hover:bg-[#2a3148] transition"

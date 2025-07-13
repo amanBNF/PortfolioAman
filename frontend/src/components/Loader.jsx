@@ -41,7 +41,7 @@ const Loader = ({ onComplete }) => {
         clearInterval(interval);
         setTypingDone(true);
       }
-    }, 100);
+    }, 200);
     return () => clearInterval(interval);
   }, []);
 
@@ -102,7 +102,7 @@ const Loader = ({ onComplete }) => {
             <h4 className="text-blue-400 font-semibold mb-2 text-sm">
               AMANTRIX TELEMETRY
             </h4>
-            <ul className="space-y-1">
+            <ul className="space-y-1.5">
               <li>🧠 MEMORY: 8GB DDR4</li>
               <li>🔋 POWER: {44 + Math.floor(progress / 10)}%</li>
               <li>🖥 DISPLAY: 1536×864 Desktop</li>
