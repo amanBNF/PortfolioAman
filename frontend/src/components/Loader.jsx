@@ -24,7 +24,6 @@ const codeLines = [
   "}",
 ];
 
-
 const Loader = ({ onComplete }) => {
   const [visibleLines, setVisibleLines] = useState([]);
   const [progress, setProgress] = useState(0);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Focus from "./components/Focus";
+import StatsBlock from "./components/StatsBlock";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ const App = () => {
         >
           <Navbar />
           <Focus />
+          <StatsBlock />
         </div>
       )}
     </div>
