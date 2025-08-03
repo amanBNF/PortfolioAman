@@ -1,6 +1,7 @@
 import React from 'react';
 import aman from '../assets/aman.png'; // Adjust if path is different
 import { Typewriter } from 'react-simple-typewriter';
+import { Binary } from 'lucide-react';
 
 const Focus = () => {
   return (
@@ -59,10 +60,10 @@ const Focus = () => {
 
           {/* Buttons */}
           <div className="flex gap-4 mt-6">
-            <button className="px-5 py-2 rounded-md border border-black text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-110 transition duration-300">
-              🔍 View Projects
+            <button className="flex flex-row px-5 py-2 rounded-md border border-black text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:brightness-160 transition duration-300 hover:text-black">
+              <span className='mr-2'><Binary size={29} color='black' /></span> View Projects
             </button>
-            <button className="px-5 py-2 rounded-md border border-black text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:brightness-110 transition duration-300">
+            <button className="px-5 py-2 rounded-md border border-black text-white bg-gradient-to-r from-blue-500 to-cyan-500 hover:brightness-160 transition duration-300 hover:text-black">
               📄 Download CV
             </button>
           </div>
